@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form {
+    background-color: #151b24;
+    color: #eafcff;
+    font-family: &quot;Malgun Gothic&quot;;
+    font-size: 10pt;
+}
+
+QWidget#page, QWidget#page_2, QWidget#page_3 {
+    background-color: #1a212c;
+    border: 1px solid #2c3947;
+    border-radius: 24px;
+}
+
+QStackedWidget#stackedWidget {
+    background: transparent;
+    border: none;
+}
+
+QLabel {
+    color: #eafcff;
+    background: transparent;
+    border: none;
+}
+
+QLabel#label_page, QLabel#label_page_2, QLabel#label_page_3 {
+    color: #8ffcff;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+QLabel#battery_label {
+    background-color: #222b37;
+    color: #ffd24d;
+    border: 2px solid #7fffd4;
+    border-radius: 16px;
+    padding-left: 14px;
+    font-weight: bold;
+}
+
+QGroupBox {
+    background-color: #212a35;
+    border: 2px solid #9adf22;
+    border-radius: 18px;
+    margin-top: 12px;
+    color: #8ffcff;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 14px;
+    padding: 0 8px 0 8px;
+    color: #ffb020;
+}
+
+QGroupBox#groupBox_page,
+QGroupBox#groupBox_page_2,
+QGroupBox#groupBox_page_3 {
+    background-color: #212a35;
+    border: 2px solid #7fffd4;
+    border-radius: 18px;
+}
+
+QGroupBox#groupBox_btns {
+    background-color: #1c2430;
+    border: 2px solid #8ffcff;
+    border-radius: 24px;
+    color: #ffb020;
+    font-size: 11pt;
+}
+
+QGroupBox#groupBox_go,
+QGroupBox#groupBox_stop,
+QGroupBox#groupBox_right,
+QGroupBox#groupBox_left,
+QGroupBox#groupBox_back,
+QGroupBox#groupBox_face {
+    background-color: #232d3a;
+    border: 2px solid #ffb020;
+    border-radius: 18px;
+}
+
+QGroupBox#groupBox_go:hover,
+QGroupBox#groupBox_stop:hover,
+QGroupBox#groupBox_right:hover,
+QGroupBox#groupBox_left:hover,
+QGroupBox#groupBox_back:hover {
+    background-color: #293544;
+    border: 2px solid #8ffcff;
+}
+
+QListWidget {
+    background-color: #202934;
+    color: #eafcff;
+    border: 2px solid #8ffcff;
+    border-radius: 18px;
+    padding: 8px;
+    outline: none;
+}
+
+QListWidget::item {
+    background-color: #263240;
+    border: 1px solid #3a495b;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin: 4px 0px;
+}
+
+QListWidget::item:hover {
+    border: 1px solid #9adf22;
+    background-color: #2b3848;
+}
+
+QListWidget::item:selected {
+    background-color: #314154;
+    border: 1px solid #ffb020;
+    color: #8ffcff;
+}
+
+QPushButton {
+    background-color: #263240;
+    color: #eafcff;
+    border: 2px solid #8ffcff;
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2d3b4c;
+    border: 2px solid #ffb020;
+}
+
+QPushButton:pressed {
+    background-color: #1a222c;
+}
+
+QPushButton#btn_pre,
+QPushButton#btn_next,
+QPushButton#btn_pre_2,
+QPushButton#btn_next_2,
+QPushButton#btn_pre_3,
+QPushButton#btn_next_3 {
+    background-color: #25313d;
+    border: 2px solid #9adf22;
+    color: #8ffcff;
+    font-size: 10pt;
+}
+
+QPushButton#btn_pre:hover,
+QPushButton#btn_next:hover,
+QPushButton#btn_pre_2:hover,
+QPushButton#btn_next_2:hover,
+QPushButton#btn_pre_3:hover,
+QPushButton#btn_next_3:hover {
+    border: 2px solid #ffb020;
+    color: #ffffff;
+}
+
+QPushButton#btn_go,
+QPushButton#btn_stop,
+QPushButton#btn_right,
+QPushButton#btn_left,
+QPushButton#btn_back {
+    background-color: #263240;
+    border: 2px solid #9adf22;
+    border-radius: 18px;
+    color: #ffb020;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+QPushButton#btn_face {
+    background-color: #263240;
+    border: 2px solid #9adf22;
+    border-radius: 18px;
+    color: #ffb020;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+QPushButton#btn_go:hover,
+QPushButton#btn_stop:hover,
+QPushButton#btn_right:hover,
+QPushButton#btn_left:hover,
+QPushButton#btn_back:hover,
+QPushButton#btn_face:hover {
+    border: 2px solid #8ffcff;
+    color: #8ffcff;
+    background-color: #304051;
+}
+
+QPushButton#btn_go:pressed,
+QPushButton#btn_stop:pressed,
+QPushButton#btn_right:pressed,
+QPushButton#btn_left:pressed,
+QPushButton#btn_back:pressed,
+QPushButton#btn_face:pressed {
+    background-color: #1b2530;
+}
+
+QTabWidget::pane {
+    border: 2px solid #8ffcff;
+    background-color: #202934;
+    border-radius: 18px;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #263240;
+    color: #8ffcff;
+    border: 2px solid #9adf22;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 8px 18px;
+    margin-right: 4px;
+    min-width: 90px;
+}
+
+QTabBar::tab:selected {
+    background-color: #304051;
+    color: #ffffff;
+    border: 2px solid #ffb020;
+}
+
+QTabBar::tab:hover {
+    background-color: #2d3b4c;
+}
+QLineEdit {
+    background-color: #263240;
+    color: #eafcff;
+    border: 2px solid #8ffcff;
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>771</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::RightToLeft</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QListWidget" name="Face_listWidget">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>180</y>
+       <width>221</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="battery_label">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>20</y>
+       <width>231</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>배터리 잔량 :</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_page">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>440</y>
+       <width>320</width>
+       <height>58</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_page">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>7</y>
+        <width>100</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1page</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_pre">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>95</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PREV</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_next">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>8</y>
+        <width>95</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NEXT</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_face">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>80</y>
+       <width>241</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLineEdit" name="Face_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_face">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>확인</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="face_label">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>60</y>
+       <width>211</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>88</x>
+       <y>36</y>
+       <width>575</width>
+       <height>360</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>STATUS</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>CONTROL</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_page_2">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>440</y>
+       <width>320</width>
+       <height>58</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_page_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>7</y>
+        <width>100</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2page</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_pre_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>95</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PREV</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_next_2">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>8</y>
+        <width>95</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NEXT</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QGroupBox" name="groupBox_btns">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>60</y>
+       <width>300</width>
+       <height>345</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>CONTROL PANEL</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_go">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="btn_go">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>8</y>
+         <width>84</width>
+         <height>84</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>↑</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_go">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_left">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>122</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="btn_left">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>8</y>
+         <width>84</width>
+         <height>84</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>←</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_left">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_stop">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>122</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="btn_stop">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>8</y>
+         <width>84</width>
+         <height>84</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>■</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_stop">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_right">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>122</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="btn_right">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>8</y>
+         <width>84</width>
+         <height>84</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>→</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_right">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_back">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>224</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="btn_back">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>8</y>
+         <width>84</width>
+         <height>84</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>↓</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_back">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_page_3">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>430</y>
+       <width>320</width>
+       <height>58</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_page_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>7</y>
+        <width>100</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3page</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_pre_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>95</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PREV</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_next_3">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>8</y>
+        <width>95</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NEXT</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>221</width>
+       <height>338</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
