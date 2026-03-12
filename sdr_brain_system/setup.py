@@ -13,7 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
-        (os.path.join('share', package_name, 'models'), ['models/best.pt']),
+        (os.path.join('share', package_name, 'models'), glob('models/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -30,6 +30,7 @@ setup(
         'console_scripts': [
             'detect_human = sdr_brain_system.detect_human:main',
             'mission_controller = sdr_brain_system.sdr_mission_controller:main',
+            'sdr_digit_reader = sdr_brain_system.sdr_digit_reader:main',
         ],
     },
 )
